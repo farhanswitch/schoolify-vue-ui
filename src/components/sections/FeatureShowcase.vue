@@ -74,8 +74,8 @@ onBeforeUnmount(() => st?.kill())
             class="flex items-center gap-2 rounded-full border px-4 py-2.5 text-sm font-semibold transition-colors"
             :class="
               activeIndex === i
-                ? 'border-ink bg-ink text-white'
-                : 'border-line bg-white text-muted hover:border-ink/40'
+                ? 'border-navy bg-navy text-white'
+                : 'border-line bg-white text-muted hover:border-navy/40'
             "
             @click="activeIndex = i"
           >
@@ -126,7 +126,7 @@ onBeforeUnmount(() => st?.kill())
               </template>
 
               <template v-else-if="tabs[activeIndex].key === 'tanya'">
-                <div class="mt-3 ml-auto w-fit max-w-[85%] rounded-2xl rounded-br-sm bg-ink px-4 py-2.5 text-white">
+                <div class="mt-3 ml-auto w-fit max-w-[85%] rounded-2xl rounded-br-sm bg-navy px-4 py-2.5 text-white">
                   Apa fungsi mitokondria?
                 </div>
                 <div class="mt-2 w-fit max-w-[90%] rounded-2xl rounded-bl-sm bg-paper-dim px-4 py-3">

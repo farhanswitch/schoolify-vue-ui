@@ -19,13 +19,13 @@ useReveal(panel)
       <div class="mt-8 flex flex-wrap items-center justify-center gap-3">
         <a
           href="#harga"
-          class="rounded-full bg-ink px-6 py-3.5 text-sm font-semibold text-white transition-transform hover:scale-105"
+          class="rounded-full bg-navy px-6 py-3.5 text-sm font-semibold text-white transition-transform hover:scale-105"
         >
           Mulai Gratis
         </a>
         <a
           href="#sekolah"
-          class="rounded-full border border-line bg-white px-6 py-3.5 text-sm font-semibold transition-colors hover:border-ink"
+          class="rounded-full border border-line bg-white px-6 py-3.5 text-sm font-semibold transition-colors hover:border-navy"
         >
           Daftar untuk Sekolah
         </a>

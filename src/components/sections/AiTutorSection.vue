@@ -50,7 +50,7 @@ function selectQuestion(i) {
             v-for="(s, i) in suggestions"
             :key="s.q"
             class="block w-full rounded-full border px-4 py-2.5 text-left text-sm font-medium transition-colors"
-            :class="active === i ? 'border-ink bg-ink text-white' : 'border-line bg-white hover:border-ink'"
+            :class="active === i ? 'border-navy bg-navy text-white' : 'border-line bg-white hover:border-navy'"
             @click="selectQuestion(i)"
           >
             {{ s.q }}
@@ -63,7 +63,7 @@ function selectQuestion(i) {
           <div v-if="!showSource" key="chat" class="text-sm">
             <p class="text-xs font-semibold text-muted">Tanya Schoolify</p>
             <div class="mt-4 space-y-3">
-              <div class="ml-auto w-fit max-w-[85%] rounded-2xl rounded-br-sm bg-ink px-4 py-2.5 text-white">
+              <div class="ml-auto w-fit max-w-[85%] rounded-2xl rounded-br-sm bg-navy px-4 py-2.5 text-white">
                 {{ suggestions[active].q }}
               </div>
               <div class="w-fit max-w-[90%] rounded-2xl rounded-bl-sm bg-paper-dim px-4 py-3">
@@ -80,7 +80,7 @@ function selectQuestion(i) {
           </div>
 
           <div v-else key="source" class="text-sm">
-            <button class="flex items-center gap-1.5 text-xs font-semibold text-muted hover:text-ink" @click="showSource = false">
+            <button class="flex items-center gap-1.5 text-xs font-semibold text-muted hover:text-navy" @click="showSource = false">
               <AppIcon name="link" :size="13" />Kembali ke jawaban
             </button>
             <div class="mt-3 flex items-center justify-between">

@@ -51,7 +51,7 @@ const plans = [
         v-for="p in plans"
         :key="p.name"
         class="rounded-2xl border p-8"
-        :class="p.highlight ? 'border-ink bg-ink text-white' : 'border-line bg-white'"
+        :class="p.highlight ? 'border-navy bg-navy text-white' : 'border-line bg-white'"
       >
         <p class="text-lg font-bold">{{ p.name }}</p>
         <p class="mt-1 text-sm" :class="p.highlight ? 'text-white/60' : 'text-muted'">{{ p.tagline }}</p>
@@ -64,7 +64,7 @@ const plans = [
         <a
           :href="p.href"
           class="mt-8 block w-full rounded-full px-5 py-3 text-center text-sm font-semibold transition-transform hover:scale-105"
-          :class="p.highlight ? 'bg-white text-ink' : 'bg-ink text-white'"
+          :class="p.highlight ? 'bg-white text-navy' : 'bg-navy text-white'"
         >
           {{ p.cta }}
         </a>
